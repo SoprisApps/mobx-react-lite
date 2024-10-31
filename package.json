@@ -32,7 +32,8 @@
         "build:commonjs": "tsc --project tsconfig.build.cjs.json",
         "build:es": "tsc --project tsconfig.build.es.json",
         "build:umd": "tsdx build --name mobxReactLite --format=umd --tsconfig tsconfig.build.es.json",
-        "release": "yarn build && yarn changeset publish"
+        "release": "yarn build && yarn changeset publish",
+        "prepare": "npm run build"
     },
     "author": "Daniel K.",
     "license": "MIT",
